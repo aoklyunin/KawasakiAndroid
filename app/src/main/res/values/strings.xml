@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OLK</string>
+    <string name="x">X-</string>
+    <string name="y">Y+</string>
+    <string name="ym">Y-</string>
+    <string name="zm">Z-</string>
+    <string name="jointStr">Джоинты</string>
+    <string name="dekartTring">Декарт</string>
+    <string name="sendBtn">Отправить</string>
+    <string name="pirates">Декарт</string>
+    <string name="ninjas">Джоинты</string>
+</resources>
