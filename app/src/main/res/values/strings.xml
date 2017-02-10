@@ -9,4 +9,13 @@
     <string name="sendBtn">Отправить</string>
     <string name="pirates">Декарт</string>
     <string name="ninjas">Джоинты</string>
+    <string name="connect">Подключиться</string>
+    <string name="cleare">Очистить</string>
+    <string name="addr">адрес</string>
+    <string name="port">Порт</string>
+    <string name="ip_address">192.168.0.57</string>
+    <string name="_port">30000</string>
+    <string name="home1">Home1</string>
+    <string name="home2">Home2</string>
+    <string name="startservice">StartService</string>
 </resources>

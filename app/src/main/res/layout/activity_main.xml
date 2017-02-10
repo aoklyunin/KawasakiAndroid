@@ -5,12 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.alex.olk.MainActivity">
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        />
+    tools:context="com.example.alex.olk.MainActivity"
+    android:weightSum="1">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -19,111 +15,39 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id = "@+id/btnZp"
-            android:text="Z+"/>
+            android:id="@+id/btnConnect"
+            android:text="@string/connect"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id = "@+id/btnXp"
-            android:text="X+"/>
+            android:id="@+id/btnClear"
+            android:text="@string/cleare"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id = "@+id/btnZm"
-            android:text="@string/zm"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id = "@+id/btnYm"
-            android:text="@string/ym"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id = "@+id/btnXm"
-            android:text="@string/x"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id = "@+id/btnYp"
-            android:text="@string/y"/>
+            android:id="@+id/btnDisconnect"
+            android:text="Отключиться"/>
     </LinearLayout>
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        />
-    <SeekBar
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/seekBar1" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        />
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar2" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        />
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar3" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        />
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar4" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        />
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar5" />
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="10dp"
-        />
-
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar6" />
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <RadioButton android:id="@+id/radio_joints"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pirates"
-            android:onClick="onRadioButtonClicked"/>
-        <RadioButton android:id="@+id/radio_dekart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ninjas"
-            android:checked="true"
-            android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/requestText"
+        android:layout_weight="0.10" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:text="Отправить"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnControl"
-        android:text="@string/sendBtn"
-        />
+        android:id="@+id/btnSend" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/responseText" />
+
 
 </LinearLayout>
