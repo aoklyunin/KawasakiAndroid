@@ -37,6 +37,12 @@ public class MainActivity extends Activity {
     DataInputStream in = null;
     Timer myTimer;
 
+    void home(){
+        addtoOutMessage(new int[]{0, Constants.C_HOME1, 0, 0, 0, 0, 0, 0, 0});
+    }
+    void home2(){
+        addtoOutMessage(new int[]{0, Constants.C_HOME2, 0, 0, 0, 0, 0, 0, 0});
+    }
     void addtoOutMessage(int[] arr) {
         for (int i = 0; i < 9; i++) {
             socketOutMessage += Constants.getVali(arr[i], 6) + " ";
@@ -45,7 +51,7 @@ public class MainActivity extends Activity {
 
     boolean openSocket() {
         try {
-            socket = new Socket("192.168.0.57", 30000);
+            socket = new Socket("192.168.1.57", 30000);
             in = new DataInputStream(socket.getInputStream());
             out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
         } catch (IOException e) {
@@ -97,7 +103,6 @@ public class MainActivity extends Activity {
             }
         });
 
-
         buttonDisconnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -118,6 +123,18 @@ public class MainActivity extends Activity {
             }
         });
         myTimer = new Timer(); // Создаем таймер
+        findViewById(R.id.buttonHome).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                home();
+            }
+        });
+        findViewById(R.id.buttonHome2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)  {
+                home2();
+            }
+        });
     }
 
     public class MyClientTask extends AsyncTask<Void, Void, Void> {
@@ -135,6 +152,4 @@ public class MainActivity extends Activity {
             return null;
         }
     }
-
-
 }
