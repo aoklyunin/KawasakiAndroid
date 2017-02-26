@@ -18,4 +18,18 @@
     <string name="home1">Home1</string>
     <string name="home2">Home2</string>
     <string name="startservice">StartService</string>
+    <string name="setAngles">Задать углы</string>
+    <string name="inPoint">В точку</string>
+    <string name="otnTurn">Относительный поворот</string>
+    <string name="InPoint2">В точку</string>
+    <string name="home21">Home2</string>
+    <string name="home">Home</string>
+    <string name="_0">0</string>
+    <string name="j1">j1</string>
+    <string name="j6">j6</string>
+    <string name="j5">j5</string>
+    <string name="j4">j4</string>
+    <string name="j3">j3</string>
+    <string name="j2">j2</string>
+    <string name="j10">j1</string>
 </resources>
